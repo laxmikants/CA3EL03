@@ -126,3 +126,64 @@ This repo contains lecture notes, code examples, and lab practicals for the subj
     - `notes.md` – Lecture notes for Unit 5  
     - **examples/** – PHP + MySQL + AJAX integration examples  
   - `README.md` – Course overview, outcomes, units, and lab practicals
+
+
+## 🛠️ Real-World Applications with PHP, MySQL, and AJAX
+
+### 1. Student Management System 🎓
+**Features:**
+- Add, update, and delete student records.
+- Manage attendance and grades.
+- AJAX-powered search & filters.
+
+**Tech Focus:** PHP (CRUD), MySQL (storage), AJAX (real-time search)
+
+---
+
+### 2. Online Polling / Voting System 🗳️
+**Features:**
+- Create polls and let users vote.
+- Show results dynamically with AJAX (no page reload).
+- Store results in MySQL.
+
+**Tech Focus:** AJAX requests + jQuery DOM updates + PHP backend
+
+---
+
+### 3. E-commerce Product Catalog 🛒
+**Features:**
+- Display products from MySQL.
+- AJAX-based product search/filter.
+- Add-to-cart system (using sessions).
+
+**Tech Focus:** PHP (sessions), AJAX (filters), MySQL (product DB)
+
+---
+
+### 4. Job Portal Application 💼
+**Features:**
+- Employers can post jobs.
+- Applicants can search and apply via AJAX forms.
+- Email confirmation for applications.
+
+**Tech Focus:** PHP Mail, AJAX forms, MySQL database
+
+---
+
+### 5. Live Chat Application 💬
+**Features:**
+- Real-time user-to-user messaging (using AJAX polling).
+- Store conversations in MySQL.
+- Session-based login system.
+
+**Tech Focus:** Sessions, AJAX requests, MySQL (messages table)
+
+---
+
+### 6. Online Quiz Application 📝
+**Features:**
+- Users can take quizzes.
+- AJAX-based question navigation.
+- Results calculated and displayed instantly.
+
+**Tech Focus:** PHP (logic), AJAX (navigation), MySQL (questions/answers)
