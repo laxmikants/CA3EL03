@@ -273,3 +273,27 @@ PHP is not just limited to websites—it extends to **CMS, APIs, e-commerce, mob
   - Docker Compose (PHP + MySQL + phpMyAdmin)  
 
 ---
+
+
+# PHP Recap 🐘
+
+## 1. Variables  
+## 2. Expressions  
+## 3. Operators  
+## 4. Control Statements  
+## 5. Loops  
+## 6. Functions  
+## 7. Arrays  
+## 8. Strings  
+## 9. Classes and Objects  
+## 10. Inheritance  
+## 11. Interfaces  
+## 12. Traits  
+## 13. Exceptions  
+## 14. Namespaces  
+## 15. File Handling  
+## 16. Superglobals  
+## 17. Sessions and Cookies  
+## 18. Forms Handling  
+## 19. Database (MySQLi / PDO)  
+## 20. Error Handling  
