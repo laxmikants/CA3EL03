@@ -109,26 +109,20 @@ This repo contains lecture notes, code examples, and lab practicals for the subj
 
 ## 📂 Repository Structure
 
-php-ajax-jquery-mysql-course/
-│
-├── Unit-1-Exception-Handling/
-│ ├── notes.md
-│ └── examples/
-│
-├── Unit-2-Files-Directories-Regex/
-│ ├── notes.md
-│ └── examples/
-│
-├── Unit-3-Cookies-Sessions-Email/
-│ ├── notes.md
-│ └── examples/
-│
-├── Unit-4-AJAX-jQuery/
-│ ├── notes.md
-│ └── examples/
-│
-├── Unit-5-PHP-AJAX-MySQL/
-│ ├── notes.md
-│ └── examples/
-│
-└── README.md
+- **php-ajax-course/**
+  - **Unit-1-Exception-Handling/**
+    - `notes.md` – Lecture notes for Unit 1  
+    - **examples/** – PHP code examples for Unit 1  
+  - **Unit-2-Files-Directories-Regex/**
+    - `notes.md` – Lecture notes for Unit 2  
+    - **examples/** – PHP code examples for Unit 2  
+  - **Unit-3-Cookies-Sessions-Email/**
+    - `notes.md` – Lecture notes for Unit 3  
+    - **examples/** – PHP code examples for Unit 3  
+  - **Unit-4-AJAX-jQuery/**
+    - `notes.md` – Lecture notes for Unit 4  
+    - **examples/** – PHP & jQuery code examples for Unit 4  
+  - **Unit-5-PHP-AJAX-MySQL/**
+    - `notes.md` – Lecture notes for Unit 5  
+    - **examples/** – PHP + MySQL + AJAX integration examples  
+  - `README.md` – Course overview, outcomes, units, and lab practicals
