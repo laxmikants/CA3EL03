@@ -150,40 +150,57 @@ This repo contains lecture notes, code examples, and lab practicals for the subj
 
 ---
 
-### 3. E-commerce Product Catalog 🛒
-**Features:**
-- Display products from MySQL.
-- AJAX-based product search/filter.
-- Add-to-cart system (using sessions).
 
-**Tech Focus:** PHP (sessions), AJAX (filters), MySQL (product DB)
-
----
-
-### 4. Job Portal Application 💼
-**Features:**
-- Employers can post jobs.
-- Applicants can search and apply via AJAX forms.
-- Email confirmation for applications.
-
-**Tech Focus:** PHP Mail, AJAX forms, MySQL database
-
----
-
-### 5. Live Chat Application 💬
-**Features:**
-- Real-time user-to-user messaging (using AJAX polling).
-- Store conversations in MySQL.
-- Session-based login system.
-
-**Tech Focus:** Sessions, AJAX requests, MySQL (messages table)
-
----
-
-### 6. Online Quiz Application 📝
+### 3. Online Quiz Application 📝
 **Features:**
 - Users can take quizzes.
 - AJAX-based question navigation.
 - Results calculated and displayed instantly.
 
 **Tech Focus:** PHP (logic), AJAX (navigation), MySQL (questions/answers)
+
+
+## ⚡ Applications with PHP Frameworks
+
+### 1. Blog Application (Laravel) 📰
+**Features:**
+- User authentication (register/login).
+- Create, edit, and delete blog posts.
+- Comment system with relationships.  
+**Tech focus:** Laravel (Eloquent ORM, Blade templates, Auth system).
+
+---
+
+### 2. To-Do List Manager (CodeIgniter) ✅
+**Features:**
+- Add, edit, and mark tasks as completed.
+- AJAX-based task updates without refresh.
+- User session management.  
+**Tech focus:** CodeIgniter (MVC structure, lightweight controllers, MySQL).
+
+---
+
+### 3. E-Commerce Store (Symfony) 🛍️
+**Features:**
+- Product listing with categories.
+- Shopping cart with session handling.
+- Checkout with Stripe/PayPal integration.  
+**Tech focus:** Symfony components, Doctrine ORM, API integration.
+
+---
+
+### 4. Event Booking System (Laravel + Vue.js) 🎟️
+**Features:**
+- Create and manage events.
+- Book tickets in real-time with Vue.js frontend.
+- Payment gateway integration.  
+**Tech focus:** Laravel API + Vue.js (SPA), MySQL.
+
+---
+
+### 5. REST API for Mobile App (Lumen) 📱
+**Features:**
+- Provide JSON-based API endpoints.
+- JWT authentication.
+- Scalable for mobile clients.  
+**Tech focus:** Lumen (micro-framework), REST API, MySQL.
