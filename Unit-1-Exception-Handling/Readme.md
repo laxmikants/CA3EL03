@@ -1,12 +1,3 @@
-## Learning Objectives
-
--   By the end of this lecture, students will:
-    -   Understand the need for exception handling.
-    -   Use `try`, `throw`, and `catch` blocks effectively.
-    -   Handle multiple exceptions with multiple `catch` blocks.
-
----
-
 # What is an Error?
 
 An **error** is an issue in the program that cannot usually be handled by the program itself. Errors are often caused by problems outside the program's control, such as hardware failures, running out of memory, or syntax mistakes. In PHP, errors are typically fatal and stop the execution of the script.
