@@ -109,7 +109,7 @@ This repo contains lecture notes, code examples, and lab practicals for the subj
 
 ## 📂 Repository Structure
 
-- **php-ajax-course/**
+- **CA3EL03/**
   - **Unit-1-Exception-Handling/**
     - `notes.md` – Lecture notes for Unit 1  
     - **examples/** – PHP code examples for Unit 1  
