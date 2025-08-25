@@ -278,22 +278,174 @@ PHP is not just limited to websites—it extends to **CMS, APIs, e-commerce, mob
 # PHP Recap 🐘
 
 ## 1. Variables  
-## 2. Expressions  
-## 3. Operators  
-## 4. Control Statements  
-## 5. Loops  
-## 6. Functions  
-## 7. Arrays  
-## 8. Strings  
-## 9. Classes and Objects  
-## 10. Inheritance  
-## 11. Interfaces  
-## 12. Traits  
-## 13. Exceptions  
-## 14. Namespaces  
-## 15. File Handling  
-## 16. Superglobals  
-## 17. Sessions and Cookies  
-## 18. Forms Handling  
-## 19. Database (MySQLi / PDO)  
-## 20. Error Handling  
+### 1. Variables
+Variables store data values. In PHP, variables start with a `$` sign.
+```php
+$name = "Alice";
+$age = 25;
+```
+
+### 2. Expressions
+An expression is any combination of variables, values, and operators that results in a value.
+```php
+$sum = $a + $b;
+```
+
+### 3. Operators
+Operators perform operations on variables and values (arithmetic, assignment, comparison, etc).
+```php
+$x = 10;
+$y = 5;
+$result = $x * $y; // Multiplication
+```
+
+### 4. Control Statements
+Control statements manage the flow of execution (if, else, switch).
+```php
+if ($age >= 18) {
+  echo "Adult";
+} else {
+  echo "Minor";
+}
+```
+
+### 5. Loops
+Loops execute a block of code repeatedly (for, while, foreach).
+```php
+for ($i = 0; $i < 5; $i++) {
+  echo $i;
+}
+```
+
+### 6. Functions
+Functions are reusable blocks of code.
+```php
+function greet($name) {
+  return "Hello, $name!";
+}
+```
+
+### 7. Arrays
+Arrays store multiple values in a single variable.
+```php
+$fruits = array("apple", "banana", "cherry");
+```
+
+### 8. Strings
+Strings are sequences of characters.
+```php
+$greeting = "Hello, World!";
+```
+
+### 9. Classes and Objects
+Classes define object blueprints; objects are instances of classes.
+```php
+class Car {
+  public $brand = "Toyota";
+}
+$myCar = new Car();
+```
+
+### 10. Inheritance
+Inheritance allows a class to use properties and methods of another class.
+```php
+class Animal {
+  public function makeSound() {
+    echo "Some sound";
+  }
+}
+class Dog extends Animal {
+  public function makeSound() {
+    echo "Bark";
+  }
+}
+```
+
+### 11. Interfaces
+Interfaces define methods that implementing classes must have.
+```php
+interface Logger {
+  public function log($msg);
+}
+class FileLogger implements Logger {
+  public function log($msg) {
+    echo $msg;
+  }
+}
+```
+
+### 12. Traits
+Traits enable code reuse in single inheritance languages like PHP.
+```php
+trait Hello {
+  public function sayHello() {
+    echo "Hello!";
+  }
+}
+class MyClass {
+  use Hello;
+}
+```
+
+### 13. Exceptions
+Exceptions handle errors gracefully using try-catch blocks.
+```php
+try {
+  throw new Exception("Error occurred");
+} catch (Exception $e) {
+  echo $e->getMessage();
+}
+```
+
+### 14. Namespaces
+Namespaces organize code and avoid name conflicts.
+```php
+namespace MyProject;
+class MyClass {}
+```
+
+### 15. File Handling
+File handling allows reading and writing files.
+```php
+$file = fopen("test.txt", "r");
+fclose($file);
+```
+
+### 16. Superglobals
+Superglobals are built-in variables accessible everywhere.
+```php
+echo $_SERVER['SERVER_NAME'];
+```
+
+### 17. Sessions and Cookies
+Sessions and cookies store user data across requests.
+```php
+// Session
+session_start();
+$_SESSION['user'] = "Alice";
+// Cookie
+setcookie("user", "Alice", time()+3600);
+```
+
+### 18. Forms Handling
+Forms collect user input and process it in PHP.
+```php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $name = $_POST['name'];
+}
+```
+
+### 19. Database (MySQLi / PDO)
+PHP can connect to databases using MySQLi or PDO.
+```php
+$conn = new mysqli("localhost", "user", "pass", "dbname");
+```
+
+### 20. Error Handling
+Error handling manages runtime errors.
+```php
+error_reporting(E_ALL);
+set_error_handler(function($errno, $errstr) {
+  echo "Error: $errstr";
+});
+```
