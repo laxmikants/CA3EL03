@@ -449,3 +449,50 @@ set_error_handler(function($errno, $errstr) {
   echo "Error: $errstr";
 });
 ```
+
+---
+
+## 📝 MCQs: PHP Basics
+
+**1. Which of the following is a valid variable name in PHP?**
+- a) $1name
+- b) $name1
+- c) name$1
+- d) 1$name
+
+<details><summary>Answer</summary>b) $name1</details>
+
+**2. What will be the output of the following expression?**
+```php
+$a = 5;
+$b = "5";
+echo ($a == $b) ? "true" : "false";
+```
+- a) true
+- b) false
+
+<details><summary>Answer</summary>a) true</details>
+
+**3. Which control statement is used to execute a block of code only if a specified condition is true?**
+- a) for
+- b) if
+- c) while
+- d) switch
+
+<details><summary>Answer</summary>b) if</details>
+
+**4. Which of the following is NOT a PHP superglobal?**
+- a) $_POST
+- b) $_SESSION
+- c) $_COOKIE
+- d) $_VARS
+
+<details><summary>Answer</summary>d) $_VARS</details>
+
+**5. Which statement is used to include user input from a form in PHP?**
+- a) $_FORM
+- b) $_INPUT
+- c) $_POST
+- d) $_DATA
+
+<details><summary>Answer</summary>c) $_POST</details>
