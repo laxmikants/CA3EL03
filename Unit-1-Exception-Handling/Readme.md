@@ -128,11 +128,7 @@ try {
 ---
 
 # Exception Handling Flow in PHP
-
-```{r}
-knitr::include_graphics("expflow.png")
-```
-
+![](expflow.png)
 
 
 ---
