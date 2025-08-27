@@ -717,170 +717,171 @@ try {
 
 ---
 
-# Question 1
 
-**Which PHP keyword is used to trigger an exception?**  
+## Question 1
 
-- A. `try`  
-- B. `catch`  
-- C. `throw`  
-- D. `raise`  
+**Which PHP keyword is used to trigger an exception?**
 
----
+- A. `try`
+- B. `catch`
+- C. `throw`
+- D. `raise`
 
-# Answer 1
+<details><summary>Show Answer</summary>
 
 **Answer:** C. `throw` ✅
 
----
-
-# Question 2
-
-**What is the purpose of the `catch` block in PHP?**  
-
-- A. To test risky code  
-- B. To define custom exceptions  
-- C. To execute code after exception  
-- D. To handle the thrown exception  
+</details>
 
 ---
 
-# Answer 2
+## Question 2
+
+**What is the purpose of the `catch` block in PHP?**
+
+- A. To test risky code
+- B. To define custom exceptions
+- C. To execute code after exception
+- D. To handle the thrown exception
+
+<details><summary>Show Answer</summary>
 
 **Answer:** D. To handle the thrown exception ✅
 
----
-
-# Question 3
-
-**Which block will execute regardless of an exception being thrown or not?**  
-
-- A. `try`  
-- B. `finally`  
-- C. `throw`  
-- D. `catch`  
+</details>
 
 ---
 
-# Answer 3
+## Question 3
+
+**Which block will execute regardless of an exception being thrown or not?**
+
+- A. `try`
+- B. `finally`
+- C. `throw`
+- D. `catch`
+
+<details><summary>Show Answer</summary>
 
 **Answer:** B. `finally` ✅
 
----
-
-# Question 4
-
-**What happens when an exception is thrown but not caught?**  
-
-- A. PHP ignores it  
-- B. The script terminates with a fatal error  
-- C. The catch block is skipped  
-- D. The program runs normally  
+</details>
 
 ---
 
-# Answer 4
+## Question 4
+
+**What happens when an exception is thrown but not caught?**
+
+- A. PHP ignores it
+- B. The script terminates with a fatal error
+- C. The catch block is skipped
+- D. The program runs normally
+
+<details><summary>Show Answer</summary>
 
 **Answer:** B. The script terminates with a fatal error ✅
 
----
-
-# Question 5
-
-**How do you create a custom exception class in PHP?**  
-
-- A. `class MyException extends Throwable {}`  
-- B. `class MyException extends Error {}`  
-- C. `class MyException extends Exception {}`  
-- D. `class Exception extends MyException {}`  
+</details>
 
 ---
 
-# Answer 5
+## Question 5
+
+**How do you create a custom exception class in PHP?**
+
+- A. `class MyException extends Throwable {}`
+- B. `class MyException extends Error {}`
+- C. `class MyException extends Exception {}`
+- D. `class Exception extends MyException {}`
+
+<details><summary>Show Answer</summary>
 
 **Answer:** C. `class MyException extends Exception {}` ✅
 
----
-
-# Question 6
-
-**Which of the following is a built-in PHP error class for numeric calculation issues?**  
-
-- A. `ArithmeticError`  
-- B. `RuntimeException`  
-- C. `LogicException`  
-- D. `LengthException`  
+</details>
 
 ---
 
-# Answer 6
+## Question 6
+
+**Which of the following is a built-in PHP error class for numeric calculation issues?**
+
+- A. `ArithmeticError`
+- B. `RuntimeException`
+- C. `LogicException`
+- D. `LengthException`
+
+<details><summary>Show Answer</summary>
 
 **Answer:** A. `ArithmeticError` ✅
 
----
-
-# Question 7
-
-**Which PHP exception is thrown when you try to access an invalid array index?**  
-
-- A. `OutOfBoundsException`  
-- B. `InvalidArgumentException`  
-- C. `RuntimeException`  
-- D. `DivisionByZeroError`  
+</details>
 
 ---
 
-# Answer 7
+## Question 7
+
+**Which PHP exception is thrown when you try to access an invalid array index?**
+
+- A. `OutOfBoundsException`
+- B. `InvalidArgumentException`
+- C. `RuntimeException`
+- D. `DivisionByZeroError`
+
+<details><summary>Show Answer</summary>
 
 **Answer:** A. `OutOfBoundsException` ✅
 
----
-
-# Question 8
-
-**Which error is thrown when dividing a number by zero in PHP 7+?**  
-
-- A. `ArithmeticError`  
-- B. `DivisionByZeroError`  
-- C. `TypeError`  
-- D. `RuntimeException`  
+</details>
 
 ---
 
-# Answer 8
+## Question 8
+
+**Which error is thrown when dividing a number by zero in PHP 7+?**
+
+- A. `ArithmeticError`
+- B. `DivisionByZeroError`
+- C. `TypeError`
+- D. `RuntimeException`
+
+<details><summary>Show Answer</summary>
 
 **Answer:** B. `DivisionByZeroError` ✅
 
----
-
-# Question 9
-
-**Which exception should be used when a function argument does not meet required conditions?**  
-
-- A. `RuntimeException`  
-- B. `InvalidArgumentException`  
-- C. `LengthException`  
-- D. `LogicException`  
+</details>
 
 ---
 
-# Answer 9
+## Question 9
+
+**Which exception should be used when a function argument does not meet required conditions?**
+
+- A. `RuntimeException`
+- B. `InvalidArgumentException`
+- C. `LengthException`
+- D. `LogicException`
+
+<details><summary>Show Answer</summary>
 
 **Answer:** B. `InvalidArgumentException` ✅
 
----
-
-# Question 10
-
-**What type of exception is thrown if a method or function receives a value of the wrong type?**  
-
-- A. `TypeError`  
-- B. `OutOfRangeException`  
-- C. `RuntimeException`  
-- D. `DivisionByZeroError`  
+</details>
 
 ---
 
-# Answer 10
+## Question 10
+
+**What type of exception is thrown if a method or function receives a value of the wrong type?**
+
+- A. `TypeError`
+- B. `OutOfRangeException`
+- C. `RuntimeException`
+- D. `DivisionByZeroError`
+
+<details><summary>Show Answer</summary>
 
 **Answer:** A. `TypeError` ✅
+
+</details>
