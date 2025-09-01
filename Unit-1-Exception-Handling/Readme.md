@@ -260,11 +260,46 @@ try {
 
 class DatabaseConnectionException extends RuntimeException {}
 
-function connectToDatabase() {
+function connectToDatabase($host, $user, $password, $database) {
+    // Suppress warnings with @
+    $mysqli = @new mysqli($host, $user, $password, $database);
+
+    if ($mysqli->connect_errno) {
+        throw new DatabaseConnectionException(
+            "Database connection failed: " . $mysqli->connect_error,
+            $mysqli->connect_errno
+        );
+    }
+
+    return $mysqli; // successful connection
+}
+
+try {
+    // Call with parameters
+    connectToDatabase("localhost", "wrong_user", "wrong_pass", "wrong_db");
+} catch (DatabaseConnectionException $e) {
+    echo "New message: " . $e->getMessage();
+}
+```
+
+---
+
+# Practical Example of Exception Chaining
+
+```php
+
+<?php
+class DatabaseConnectionException extends RuntimeException {}
+
+function connectToDatabase($host, $user, $password, $database) {
+    // Enable exception mode for mysqli
+    mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+
     try {
-        // Connection attempt that fails
-        throw new PDOException("Could not connect to DB server");
-    } catch (PDOException $e) {
+        $mysqli = new mysqli($host, $user, $password, $database);
+        $mysqli->set_charset("utf8mb4"); // optional: set charset
+        return $mysqli;
+    } catch (RuntimeException $e) {
         throw new DatabaseConnectionException(
             "Database connection failed", 
             500, 
@@ -274,7 +309,7 @@ function connectToDatabase() {
 }
 
 try {
-    connectToDatabase();
+    connectToDatabase("localhost", "wrong_user", "wrong_pass", "wrong_db");
 } catch (DatabaseConnectionException $e) {
     echo "New message: " . $e->getMessage();
 }
