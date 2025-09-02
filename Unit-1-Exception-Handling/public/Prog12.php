@@ -1,21 +1,25 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
-function divide( $a, $b ) {
-    return $a / $b;
+class DatabaseConnectionException extends RuntimeException {}
+
+function connectToDatabase($host, $user, $password, $database) {
+    $mysqli = @new mysqli($host, $user, $password, $database);
+
+    if ($mysqli->connect_errno) {
+        throw new DatabaseConnectionException(
+            "Database connection failed: " . $mysqli->connect_error,
+            $mysqli->connect_errno
+        );
+    }
+
+    return $mysqli; // successful connection
 }
 
 try {
-
-    $a = 10; 
-    $b = 0;
-    $c = divide( $a, $b );
-    echo $c;
-} catch ( Exception $e ) {
-    echo $e->getMessage() ."Divide by zero";
-} catch(DivisionByZeroError $e ) {
-    echo $e->getMessage() ."inside division by zero error";
-}
-finally {
-    echo "finaly block executed";
+    connectToDatabase("localhost", "wrong_user", "wrong_pass", "wrong_db");
+} catch (DatabaseConnectionException $e) {
+    echo "New message: " . $e->getMessage();
 }
 ?>

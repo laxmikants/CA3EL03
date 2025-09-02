@@ -258,10 +258,12 @@ try {
 
 ```php
 
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 class DatabaseConnectionException extends RuntimeException {}
 
 function connectToDatabase($host, $user, $password, $database) {
-    // Suppress warnings with @
     $mysqli = @new mysqli($host, $user, $password, $database);
 
     if ($mysqli->connect_errno) {
@@ -275,7 +277,6 @@ function connectToDatabase($host, $user, $password, $database) {
 }
 
 try {
-    // Call with parameters
     connectToDatabase("localhost", "wrong_user", "wrong_pass", "wrong_db");
 } catch (DatabaseConnectionException $e) {
     echo "New message: " . $e->getMessage();
