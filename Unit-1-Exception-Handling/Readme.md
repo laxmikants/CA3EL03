@@ -299,7 +299,7 @@ function connectToDatabase($host, $user, $password, $database) {
         $mysqli = new mysqli($host, $user, $password, $database);
         $mysqli->set_charset("utf8mb4"); // optional: set charset
         return $mysqli;
-    } catch (RuntimeException $e) {
+    } catch (mysqli_sql_exception $e) {
         throw new DatabaseConnectionException(
             "Database connection failed", 
             500, 

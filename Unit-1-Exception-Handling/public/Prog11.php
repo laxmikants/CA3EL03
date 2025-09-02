@@ -1,23 +1,26 @@
 <?php
-class MyDatabaseException extends RuntimeException {
-    public function __construct($message, $code = 0, Exception $previous = null) {
-        echo "hi". $message ."";
+
+class DatabaseConnectionException extends RuntimeException {}
+
+function connectToDatabase($host, $user, $password, $database) {
+    // Enable exception mode for mysqli
+    mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+
+    try {
+        $mysqli = new mysqli($host, $user, $password, $database);
+        return $mysqli;
+    } catch (mysqli_sql_exception $e) {
+        throw new DatabaseConnectionException(
+            "Database connection failed", 
+            500, 
+            $e
+        );
     }
 }
 
-function connecttodb($server,$username,$password,$database) {
-try {    
-    $myconn = new mysqli($server, $username, $password, $database);
-} catch (RuntimeException $e) {
-    throw new MyDatabaseException($e->getMessage(), $e->getCode(), $e);
-}
-}
-
-
 try {
-    echo connecttodb("localhost","root","root","lab114");
-} catch (RuntimeException $e) {
-    throw new MyDatabaseException($e->getMessage(), $e->getCode(), $e);
-
+    connectToDatabase("localhost", "wrong_user", "wrong_pass", "wrong_db");
+} catch (DatabaseConnectionException $e) {
+    echo "New message: " . $e->getMessage();
 }
 ?>
