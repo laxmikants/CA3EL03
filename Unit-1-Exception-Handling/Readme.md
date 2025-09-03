@@ -365,7 +365,7 @@ try {
 
 ---
 
-# Practival Example of TypeError in php
+# Practical Example of TypeError in php
 
 A PHP TypeError occurs when you try to perform an operation on a value of the wrong type. Here are the most common causes and solutions for a simple PHP demo:
 
@@ -384,7 +384,7 @@ $result = addNumbers((int)"5", (int)"10");
 ```
 
 
-# Practival Example of TypeError in php
+# Practical Example of TypeError in php
 
 
 ```php
@@ -400,7 +400,7 @@ echo strtoupper($name); // TypeError: strtoupper(): Argument #1 ($string) must b
 
 ```
 
-# Practival Example of ParseError in php
+# Practical Example of TypeError in php
 
 ```php
 <?php
