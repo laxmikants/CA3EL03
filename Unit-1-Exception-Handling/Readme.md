@@ -365,6 +365,49 @@ try {
 
 ---
 
+# Practival Example of TypeError in php
+
+A PHP TypeError occurs when you try to perform an operation on a value of the wrong type. Here are the most common causes and solutions for a simple PHP demo:
+
+
+```~~php~~
+<?php
+function addNumbers(int $a, int $b) {
+    return $a + $b;
+}
+
+// This will cause TypeError: Argument must be of type int
+$result = addNumbers("5", "10");
+$result = addNumbers((int)"5", (int)"10");
+
+?>
+```
+
+
+# Practival Example of TypeError in php
+
+
+```php
+
+<?php
+function getName(): string {
+    return null; // This will cause TypeError
+}
+
+$name = getName();
+echo strtoupper($name); // TypeError: strtoupper(): Argument #1 ($string) must be of type string, null given
+?>
+
+```
+
+# Practival Example of ParseError in php
+
+```php
+<?php
+// This will cause a ParseError because of missing closing parenthesis
+echo "Hello World";
+```
+
 # Practical Example of File handling Exception
 
 ```markdown

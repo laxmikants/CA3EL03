@@ -19,7 +19,11 @@ function connectToDatabase($host, $user, $password, $database) {
 }
 
 try {
-    connectToDatabase("localhost", "wrong_user", "wrong_pass", "wrong_db");
+    //connectToDatabase("localhost", "wrong_user", "wrong_pass", "wrong_db");
+    $con = connectToDatabase("10.10.60.165", "root", "root", "lab114");    
+    if($con) {
+        echo "Connection successful!";
+    }
 } catch (DatabaseConnectionException $e) {
     echo "New message: " . $e->getMessage();
 }
