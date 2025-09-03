@@ -370,7 +370,7 @@ try {
 A PHP TypeError occurs when you try to perform an operation on a value of the wrong type. Here are the most common causes and solutions for a simple PHP demo:
 
 
-```~~php~~
+```php
 <?php
 function addNumbers(int $a, int $b) {
     return $a + $b;
